@@ -1,0 +1,14 @@
+site_name: Inventory Management System
+nav:
+  - Overview: index.md
+# - Requirements : requirements.md
+  - Use Case: use_case.md
+  - Functional Documentation: fucntional_doc.md
+theme:
+  name: material
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+
