@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../fucntional_doc/">
+      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>Requirements - Inventory Management System</title>
+        <title>Technical Documentation - Inventory Management System</title>
       
     
     
@@ -58,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#functional-requirements" class="md-skip">
+        <a href="#technical-document" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Requirements
+              Technical Documentation
             
           </span>
         </div>
@@ -253,10 +255,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../technical_doc/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Technical Documentation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -267,6 +291,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-flow-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Flow Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flow-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flow Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flow Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managers-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manager’s Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salespersons-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Salesperson’s Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Interactions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-data-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Data Modeling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. System Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Technology Stack
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -288,6 +443,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -296,28 +453,74 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#functional-requirements" class="md-nav__link">
+  <a href="#data-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      Functional Requirements
+      Data Flow
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Functional Requirements">
+    <nav class="md-nav" aria-label="Data Flow">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wholesaler-admin" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Wholesaler (Admin)
+      Overview
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#salesperson" class="md-nav__link">
+  <a href="#data-flow-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Salesperson
+      Data Flow Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flow-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flow Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flow Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managers-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manager’s Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salespersons-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Salesperson’s Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Interactions
     </span>
   </a>
   
@@ -325,6 +528,38 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-data-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Data Modeling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. System Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Technology Stack
+    </span>
+  </a>
   
 </li>
       
@@ -344,75 +579,87 @@
 
 
 
-  <h1>Requirements</h1>
-
-<h2 id="functional-requirements">Functional Requirements</h2>
-<p>Following are the functional requirements of the Inventory Management System:</p>
-<h3 id="wholesaler-admin">Wholesaler (Admin)</h3>
+<h1 id="technical-document">🧩 Technical Document</h1>
+<p>This document provides a detailed technical overview of the <strong>Inventory Management System (IMS)</strong>.<br />
+It focuses on the internal working of the system, explaining how data flows, how it is structured, and how different components interact with each other to achieve system functionality.</p>
+<hr />
+<h2 id="data-flow">Data Flow</h2>
+<h3 id="overview">Overview</h3>
+<p>The <strong>Data Flow Diagram (DFD)</strong> of the <strong>Inventory Management System (IMS)</strong> illustrates the logical movement of data among the primary entities, system processes, and the centralized database.  </p>
+<p>The flow begins with a <strong>User</strong> initiating authentication through the <strong>JWT-based Authentication Module</strong>, where login credentials are validated against stored user records. Upon successful verification, access privileges are assigned based on the user’s designated role.</p>
+<ul>
+<li>A <strong>Manager (Authenticated)</strong> can update product details, manage inventory levels, and view all recorded sales transactions for monitoring purposes.  </li>
+<li>A <strong>Salesperson (Authenticated)</strong> can record new sales transactions and view their individual transaction history.  </li>
+</ul>
+<p>Both roles interact with system processes that communicate directly with the <strong>Database</strong>, which acts as the central data repository.  </p>
+<hr />
+<h3 id="data-flow-diagram">Data Flow Diagram</h3>
+<p><img alt="Data Flow Diagram" src="../assests/images/data_flow_ims.svg" style="display:block; margin-left:auto; margin-right:auto;" width="110%" /></p>
+<hr />
+<h3 id="flow-description">Flow Description</h3>
+<h4 id="user-authentication">User Authentication</h4>
+<p>All users initiate interaction with the system through a secure login process. Upon submission of credentials, the <strong>Authentication Module</strong> verifies user details against the <strong>User Database</strong>. If valid, a <strong>JWT token</strong> is generated and issued to the client, allowing authenticated access to authorized system functions.</p>
+<h4 id="managers-operations">Manager’s Operations</h4>
+<p>After successful authentication, the <strong>Manager</strong> gains access to product and transaction management features.<br />
+They are permitted to:  <br />
+- <strong>Update inventory</strong>, including adding, modifying, or deleting product details.<br />
+- <strong>View transaction records</strong> for oversight of sales activities.  </p>
+<p>All modifications performed by the manager are securely stored in the central <strong>Database</strong>, ensuring real-time data consistency.</p>
+<h4 id="salespersons-operations">Salesperson’s Operations</h4>
+<p>Once authenticated, the <strong>Salesperson</strong> can: <br />
+- <strong>Record sales transactions</strong>, selecting products and quantities from available stock.<br />
+- <strong>View their own transaction history</strong>, allowing transparency and tracking of sales activity.  </p>
+<p>Each transaction entry updates the <strong>Transactions</strong> and <strong>Products</strong> tables in the <strong>Database</strong>, reflecting accurate stock levels after every sale.</p>
+<h4 id="database-interactions">Database Interactions</h4>
+<p>The <strong>Database</strong> serves as the unified data repository for all system entities, including <strong>Users</strong>, <strong>Products</strong>, and <strong>Transactions</strong>.<br />
+Every process communicates with the database through secure API calls.</p>
+<hr />
+<h2 id="2-data-modeling">2. Data Modeling</h2>
+<p>This section explains the logical structure of the database using an <strong>Entity-Relationship (ER)</strong> or <strong>Schema Diagram</strong>.<br />
+It defines how different entities such as users, products, and transactions are related and how data is stored and retrieved efficiently.</p>
+<p><img alt="Data Model" src="../assests/images/data_model.png" style="display:block; margin-left:auto; margin-right:auto;" width="150%" /></p>
+<hr />
+<h2 id="3-system-architecture">3. System Architecture</h2>
+<p>This section presents the overall system architecture, describing the key components and how they interact.<br />
+The system follows a layered architecture to ensure modularity, scalability, and maintainability — typically including the <strong>Presentation Layer</strong>, <strong>Application Layer</strong>, and <strong>Data Layer</strong>.</p>
+<p><img alt="Architecture (AWS Specific)" src="../assests/images/architecture_diagram.svg" style="display:block; margin-left:auto; margin-right:auto;" width="100%" /></p>
+<hr />
+<h2 id="4-technology-stack">4. Technology Stack</h2>
 <table>
 <thead>
 <tr>
-<th>ID</th>
-<th>Requirement Description</th>
+<th>Layer</th>
+<th>Technology Used</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>FR1</td>
-<td>The wholesaler should be able to <strong>register</strong> and <strong>log in</strong> securely.</td>
+<td><strong>Frontend</strong></td>
+<td>HTML, CSS, JavaScript (or React)</td>
 </tr>
 <tr>
-<td>FR2</td>
-<td>The wholesaler should be able to <strong>add new products</strong> with details such as name and stock quantity.</td>
+<td><strong>Backend</strong></td>
+<td>Django REST Framework (DRF)</td>
 </tr>
 <tr>
-<td>FR3</td>
-<td>The wholesaler should be able to <strong>edit or delete existing products</strong>.</td>
+<td><strong>Database</strong></td>
+<td>PostgreSQL</td>
 </tr>
 <tr>
-<td>FR4</td>
-<td>The wholesaler should be able to <strong>update product stock</strong> and <strong>record transactions</strong> after a purchase or sales.</td>
+<td><strong>Authentication</strong></td>
+<td>JSON Web Token (JWT)</td>
 </tr>
 <tr>
-<td>FR5</td>
-<td>The wholesaler should be able to <strong>record transactions</strong> for both <strong>sales</strong> and <strong>purchases</strong>.</td>
+<td><strong>Version Control</strong></td>
+<td>Git &amp; GitHub</td>
 </tr>
 <tr>
-<td>FR6</td>
-<td>The wholesaler should be able to <strong>view all transactions</strong>, including those made by salespersons.</td>
+<td><strong>Deployment (optional)</strong></td>
+<td>Docker / AWS / Heroku</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><img alt="Wholesaler Flowchart" src="../assests/images/owner.svg" style="display:block; margin-left:auto; margin-right:auto;" /></p>
-<h3 id="salesperson">Salesperson</h3>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Requirement Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>FR10</td>
-<td>The salesperson should be able to <strong>regiser</strong> and <strong>log in</strong> securely.</td>
-</tr>
-<tr>
-<td>FR11</td>
-<td>The salesperson should be able to <strong>view all available products</strong> and their stock quantities.</td>
-</tr>
-<tr>
-<td>FR12</td>
-<td>The salesperson should be able to <strong>record sales transactions only</strong>.</td>
-</tr>
-<tr>
-<td>FR13</td>
-<td>The salesperson should be able to <strong>view only their own transaction history</strong>.</td>
-</tr>
-</tbody>
-</table>
-<p><img alt="Wholesaler Flowchart" src="assests/images/employee.svg" style="display:block; margin-left:auto; margin-right:auto;" width="20%" /></p>
 
 
 
