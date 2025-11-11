@@ -1,0 +1,469 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="use_case/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Inventory Management System</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.2a3383ac.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Inventory Management System" class="md-header__button md-logo" aria-label="Inventory Management System" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Inventory Management System
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Inventory Management System" class="md-nav__button md-logo" aria-label="Inventory Management System" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Inventory Management System
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="use_case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Use Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fucntional_doc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Functional Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="overview"><strong>Overview</strong></h1>
+<p>Welcome to the documentation of Inventory Management System.</p>
+<h1 id="inventory-management-system-ims"><strong>Inventory Management System (IMS)</strong></h1>
+<h2 id="1-introduction"><strong>1. Introduction</strong></h2>
+<p>The <strong>Inventory Management System (IMS)</strong> is designed to streamline and simplify the management of products, sales, and purchases in grocery marts. These businesses are typically operated by a <strong>manager</strong> who supervises a few <strong>salesperson</strong> responsible for day-to-day operations.  </p>
+<p>This document outlines the behaviour of the IMS explaining how different users — <strong>manager</strong> and <strong>salesperson</strong> — interact with the system, what functionalities are available to them, and how the system responds to their actions.<br />
+The purpose is to ensure a clear understanding of the <strong>system’s overall functionality</strong>, helping to align its features with both <strong>user needs</strong> and <strong>business goals</strong>.</p>
+<hr />
+<h2 id="2-problem-statement"><strong>2. Problem Statement</strong></h2>
+<p>In many small and medium-sized grocery marts, inventory is still managed <strong>manually</strong> using ledgers, spreadsheets, or informal records. This manual process leads to:  </p>
+<ul>
+<li>Frequent <strong>data inconsistencies</strong> and <strong>human errors</strong>  </li>
+<li>Difficulty in tracking <strong>stock levels</strong> and <strong>product movements</strong>  </li>
+<li>Lack of visibility into <strong>sales and purchase history</strong> </li>
+<li>Inefficient communication  </li>
+</ul>
+<p>As a result, businesses often struggle with <strong>overstocking</strong>, <strong>stockouts</strong>, and <strong>loss of sales opportunities</strong>, impacting both profitability and operational efficiency.</p>
+<hr />
+<h2 id="3-proposed-solution"><strong>3. Proposed Solution</strong></h2>
+<p>The <strong>Inventory Management System (IMS)</strong> provides a <strong>centralized digital platform</strong> that automates and simplifies inventory-related processes. It enables both manager and salesperson to manage transactions, view stock details, and generate reports efficiently.</p>
+<h3 id="key-features"><strong>Key Features</strong></h3>
+<ul>
+<li><strong>User Roles:</strong> Separate access levels for admins and employees  </li>
+<li><strong>Product Management:</strong> Add, update, and view product details  </li>
+<li><strong>Transaction Management:</strong> Record and track <strong>sales</strong> transactions  </li>
+<li><strong>Stock Tracking:</strong> Updates on product quantities after each transaction  </li>
+<li><strong>Data Insights:</strong> View historical data   </li>
+</ul>
+<h3 id="system-benefits"><strong>System Benefits</strong></h3>
+<ul>
+<li>Eliminates manual record-keeping and minimizes human errors  </li>
+<li>Improves visibility of stock movement and sales data  </li>
+<li>Ensures accountability through role-based permissions  </li>
+<li>Enhances operational efficiency and decision-making for business growth  </li>
+</ul>
+<hr />
+<h2 id="objectives"><strong>Objectives</strong></h2>
+<p>The primary objectives of the Inventory Management System are:</p>
+<ul>
+<li><strong>Efficient Stock Management</strong><br />
+  To provide a platform where admins can add, update, or delete product information and track stock quantities.</li>
+<li><strong>Role-Based Control</strong><br />
+  To ensure that access privileges are granted according to user roles (Admin or employee).</li>
+<li><strong>Transaction Tracking</strong><br />
+  To maintain a record of all sales transactions.</li>
+<li><strong>Improved Visibility</strong><br />
+  To allow visibility of all the products available, making it easier for the employee to interact with customers.</li>
+<li><strong>Error Reduction</strong><br />
+  To minimize manual entry errors and duplication by automating stock updates after each transaction.</li>
+</ul>
+<h2 id="tech-stack"><strong>Tech Stack</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Technology / Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backend Framework</td>
+<td>Django REST Framework</td>
+</tr>
+<tr>
+<td>Frontend</td>
+<td>HTML, CSS, JavaScript</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td>Mobile Application</td>
+<td>PWA</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>MkDocs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="user-roles-and-permissions"><strong>User Roles and Permissions</strong></h2>
+<p>The Inventory Management System (IMS) defines three primary user roles — <strong>Admin</strong>, <strong>Manager</strong>, and <strong>Salesperson</strong> — each with distinct levels of access and responsibility. This role-based access control ensures data integrity, operational efficiency, and accountability within the system.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Role</strong></th>
+<th><strong>Permissions / Capabilities</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Admin</strong></td>
+<td>- Has complete system control.<br>- Add, edit, or delete products.<br>- Manage user accounts (create or remove managers and salespersons).<br>- Update stock quantities and manage inventory.<br>- Record purchase transactions.<br>- View all transactions.<br></td>
+</tr>
+<tr>
+<td><strong>Manager</strong></td>
+<td>- Oversees inventory.<br>- Add, update, or delete products as required.<br>- Update inventory quantities.<br>- View sales transactions made by all salespersons.<br></td>
+</tr>
+<tr>
+<td><strong>Salesperson</strong></td>
+<td>- View available products and their current quantities.<br>- Record sales transactions.<br>- View and track their own transaction history.<br>- Maintain accurate sales entries.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="future-scope"><strong>Future Scope</strong></h2>
+<p>The Inventory Management System (IMS) in its current version provides a solid foundation for managing products, transactions, and user roles. However, several enhancements are planned to further expand its analytical capabilities, operational efficiency, and business intelligence.</p>
+<h3 id="dashboard-enhancements-and-analytics"><strong>Dashboard Enhancements and Analytics</strong></h3>
+<p>Future updates will introduce advanced visual analytics for the admin dashboard. Administrators will be able to view detailed visualizations of purchase and sales data from the previous month, including interactive graphs and trend summaries. These insights will enable better performance monitoring and strategic decision-making. Over time, additional filtering and comparative visualization features may also be integrated to allow detailed exploration by date range, product category, or employee activity.</p>
+<h3 id="automated-stock-management"><strong>Automated Stock Management</strong></h3>
+<p>The system will include automated low-stock alerts to notify administrators when product quantities drop below a defined threshold. This feature will support proactive restocking and prevent stockouts that may affect sales continuity. Alerts may later be extended to include supplier integration for faster replenishment.</p>
+<h3 id="customer-management-integration"><strong>Customer Management Integration</strong></h3>
+<p>Currently, the system does not maintain customer information. A dedicated customer module will be introduced to store and manage customer details. This addition will enable the system to generate customer-specific sales reports, track purchase histories, and support loyalty or promotional initiatives in the future. Maintaining customer data will also improve overall business intelligence by providing deeper insights into customer behavior and sales trends.</p>
+<h3 id="cost-price-and-profit-analysis"><strong>Cost Price and Profit Analysis</strong></h3>
+<p>At present, the system focuses on tracking only the selling price of products. Future versions will include cost price management to facilitate accurate profit margin analysis. This enhancement will enable the calculation of profit and loss reports, helping administrators understand product-level profitability and make informed pricing decisions. Because both cost and selling prices may change over time, the system will maintain historical pricing records to ensure the accuracy of financial analyses.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
