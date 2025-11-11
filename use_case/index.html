@@ -280,13 +280,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-cases-for-owner" class="md-nav__link">
+  <a href="#use-cases-for-manager" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Cases for owner
+      Use Cases for manager
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Use Cases for owner">
+    <nav class="md-nav" aria-label="Use Cases for manager">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -299,9 +299,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-case-2-monitor-stock-levels" class="md-nav__link">
+  <a href="#use-case-2-view-stock-levels" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Case 2: Monitor Stock Levels
+      Use Case 2: View Stock Levels
     </span>
   </a>
   
@@ -322,13 +322,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-cases-for-employee" class="md-nav__link">
+  <a href="#use-cases-for-salesperson" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Cases for employee
+      Use Cases for salesperson
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Use Cases for employee">
+    <nav class="md-nav" aria-label="Use Cases for salesperson">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -427,13 +427,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-cases-for-owner" class="md-nav__link">
+  <a href="#use-cases-for-manager" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Cases for owner
+      Use Cases for manager
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Use Cases for owner">
+    <nav class="md-nav" aria-label="Use Cases for manager">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -446,9 +446,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-case-2-monitor-stock-levels" class="md-nav__link">
+  <a href="#use-case-2-view-stock-levels" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Case 2: Monitor Stock Levels
+      Use Case 2: View Stock Levels
     </span>
   </a>
   
@@ -469,13 +469,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-cases-for-employee" class="md-nav__link">
+  <a href="#use-cases-for-salesperson" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Cases for employee
+      Use Cases for salesperson
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Use Cases for employee">
+    <nav class="md-nav" aria-label="Use Cases for salesperson">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -530,17 +530,21 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>owner (Admin)</strong></td>
+<td style="text-align: left;"><strong>Admin</strong></td>
+<td style="text-align: left;">Has full control over the system, including managing user accounts (creating or removing managers and salespersons), overseeing inventory, updating stock quantities, recording purchase transactions, and viewing all sales and purchase activities.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Manager</strong></td>
 <td style="text-align: left;">Oversees inventory control, manages product data, monitors stock levels, and ensures availability for sales.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>employee</strong></td>
+<td style="text-align: left;"><strong>Salesperson</strong></td>
 <td style="text-align: left;">Interacts with customers, records sales, and provides product information based on available stock.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="use-cases-for-owner"><strong>Use Cases for owner</strong></h2>
+<h2 id="use-cases-for-manager"><strong>Use Cases for manager</strong></h2>
 <h4 id="use-case-1-manage-product-inventory"><strong>Use Case 1: Manage Product Inventory</strong></h4>
 <table>
 <thead>
@@ -555,11 +559,11 @@
 <td style="text-align: left;">To efficiently manage product data — adding, updating, or removing items from inventory.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Preconditions</strong></td>
-<td style="text-align: left;">owner has administrative access to the inventory system.</td>
+<td style="text-align: left;"><strong>Pre conditions</strong></td>
+<td style="text-align: left;">manager has administrative access to the inventory system.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Postconditions</strong></td>
+<td style="text-align: left;"><strong>Post conditions</strong></td>
 <td style="text-align: left;">Inventory is updated; new products become visible to the team; deleted items are removed.</td>
 </tr>
 <tr>
@@ -569,7 +573,7 @@
 </tbody>
 </table>
 <hr />
-<h4 id="use-case-2-monitor-stock-levels"><strong>Use Case 2: Monitor Stock Levels</strong></h4>
+<h4 id="use-case-2-view-stock-levels"><strong>Use Case 2: View Stock Levels</strong></h4>
 <table>
 <thead>
 <tr>
@@ -583,12 +587,12 @@
 <td style="text-align: left;">To view and track stock availability and identify when to restock.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Preconditions</strong></td>
+<td style="text-align: left;"><strong>Pre conditions</strong></td>
 <td style="text-align: left;">Inventory data is available and regularly updated.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Postconditions</strong></td>
-<td style="text-align: left;">owner has insights into low-stock or high-demand items.</td>
+<td style="text-align: left;"><strong>Post conditions</strong></td>
+<td style="text-align: left;">manager has insights into low-stock or high-demand items.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Business Value</strong></td>
@@ -608,15 +612,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Goal</strong></td>
-<td style="text-align: left;">To be able to view and add sales and purchase transactions.</td>
+<td style="text-align: left;">To be able to view and add purchase transactions.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Preconditions</strong></td>
+<td style="text-align: left;"><strong>Pre conditions</strong></td>
 <td style="text-align: left;">Transaction data is stored in the system.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Postconditions</strong></td>
-<td style="text-align: left;">The owner is able to view the transactions of self and the employee.</td>
+<td style="text-align: left;"><strong>Post conditions</strong></td>
+<td style="text-align: left;">The manager is able to view the transactions of self and the salesperson.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Business Value</strong></td>
@@ -625,7 +629,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="use-cases-for-employee"><strong>Use Cases for employee</strong></h2>
+<h2 id="use-cases-for-salesperson"><strong>Use Cases for salesperson</strong></h2>
 <h4 id="use-case-1-view-available-stock"><strong>Use Case 1: View Available Stock</strong></h4>
 <table>
 <thead>
@@ -640,12 +644,12 @@
 <td style="text-align: left;">To view available products and their stock levels before interacting with customers.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Preconditions</strong></td>
+<td style="text-align: left;"><strong>Pre conditions</strong></td>
 <td style="text-align: left;">Valid login credentials; system connected to live inventory.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Postconditions</strong></td>
-<td style="text-align: left;">Accurate product and stock information displayed to the employee.</td>
+<td style="text-align: left;"><strong>Post conditions</strong></td>
+<td style="text-align: left;">Accurate product and stock information displayed to the salesperson.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Business Value</strong></td>
@@ -668,11 +672,11 @@
 <td style="text-align: left;">To record product sales and automatically update stock levels.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Preconditions</strong></td>
+<td style="text-align: left;"><strong>Pre conditions</strong></td>
 <td style="text-align: left;">Product must exist in inventory with sufficient quantity.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Postconditions</strong></td>
+<td style="text-align: left;"><strong>Post conditions</strong></td>
 <td style="text-align: left;">Transaction saved; stock reduced accordingly.</td>
 </tr>
 <tr>
