@@ -158,7 +158,7 @@ This enables stateless and secure communication between the client and server, e
 2. The frontend sends these credentials to the backend authentication endpoint (`/api/auth/login/`).  
 3. The backend validates the credentials against the **Users** table.  
 4. If valid, the backend generates both an **Access Token** (short-lived) and a **Refresh Token** (long-lived) using **Simple JWT**.  
-5. These tokens are returned to the frontend and securely stored.
+5. These tokens are returned to the frontend and securely stored in the local storage.
 6. When the access token expires, the frontend uses the refresh token at `/api/auth/refresh/` to obtain a new one.  
 7. If credentials are invalid, the system responds with **HTTP 401 Unauthorized**.
 
@@ -233,11 +233,16 @@ By combining JWT authentication with role-based authorization, the IMS maintains
 | **Database** | PostgreSQL | 16 | Stores structured data with relational integrity. |
 | **ORM** | Django ORM | Included | Simplifies database queries and migrations. |
 
-### **3. Tools & Infrastructure**
+### **3. Tools & Technologies**
 
-| Component | Technology Used | Stable Version | Description |
-|------------|------------------|----------------|--------------|
+| **Component** | **Technology Used** | **Stable Version** | **Description** |
+|----------------|----------------------|--------------------|------------------|
 | **Version Control** | Git + GitHub | Latest | Used for source code management and collaboration. |
 | **CI/CD Pipeline** | GitHub Actions | Latest | Automates build, testing, and deployment workflows. |
 | **Package Management** | pip | 25.2 | Handles dependency installation and environment management. |
 | **IDE / Code Editor** | VS Code | Latest | Development environment for writing and debugging code. |
+| **API Testing Tool** | Postman | Latest | Used for testing, validating, and documenting RESTful APIs. |
+| **Backend Testing Framework** | Pytest | 8.3 | Framework for unit, integration, and functional testing of Django backend. |
+| **Frontend Testing Framework** | Jest | 29.7 | JavaScript testing framework used for testing UI components and frontend logic. |
+
+
