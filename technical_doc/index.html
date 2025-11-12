@@ -12,8 +12,6 @@
         <link rel="prev" href="../fucntional_doc/">
       
       
-        <link rel="next" href="../future_scope/">
-      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
@@ -659,28 +657,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../future_scope/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Future Scope
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -1318,7 +1294,7 @@ This enables stateless and secure communication between the client and server, e
 <li>The frontend sends these credentials to the backend authentication endpoint (<code>/api/auth/login/</code>).  </li>
 <li>The backend validates the credentials against the <strong>Users</strong> table.  </li>
 <li>If valid, the backend generates both an <strong>Access Token</strong> (short-lived) and a <strong>Refresh Token</strong> (long-lived) using <strong>Simple JWT</strong>.  </li>
-<li>These tokens are returned to the frontend and securely stored.</li>
+<li>These tokens are returned to the frontend and securely stored in the local storage.</li>
 <li>When the access token expires, the frontend uses the refresh token at <code>/api/auth/refresh/</code> to obtain a new one.  </li>
 <li>If credentials are invalid, the system responds with <strong>HTTP 401 Unauthorized</strong>.</li>
 </ol>
@@ -1480,6 +1456,12 @@ By combining JWT authentication with role-based authorization, the IMS maintains
 <td>VS Code</td>
 <td>Latest</td>
 <td>Development environment for writing and debugging code.</td>
+</tr>
+<tr>
+<td><strong>API Testing Tool</strong></td>
+<td>Postman</td>
+<td>Latest</td>
+<td>Used for testing, validating, and documenting RESTful APIs.</td>
 </tr>
 </tbody>
 </table>
