@@ -62,15 +62,6 @@ The primary objectives of the Inventory Management System are:
   To minimize manual entry errors and duplication by automating stock updates after each transaction.
 
 
-## **Tech Stack**
-
-| Category             | Technology / Tool        |
-|----------------------|--------------------------|
-| Backend Framework | Django REST Framework     |
-| Frontend          | HTML, CSS, JavaScript     |
-| Database         | PostgreSQL       |
-| Mobile Application | PWA                 |
-| Documentation     | MkDocs                   |
 
 ## **User Roles and Permissions**
 
@@ -83,21 +74,5 @@ The Inventory Management System (IMS) defines three primary user roles — **Adm
 | **Salesperson** | - View available products and their current quantities.<br>- Record sales transactions.<br>- View and track their own transaction history.<br>- Maintain accurate sales entries. |
 
 
-## **Future Scope**
 
-The Inventory Management System (IMS) in its current version provides a solid foundation for managing products, transactions, and user roles. However, several enhancements are planned to further expand its analytical capabilities, operational efficiency, and business intelligence.
-
-### **Dashboard Enhancements and Analytics**
-Future updates will introduce advanced visual analytics for the admin dashboard. Administrators will be able to view detailed visualizations of purchase and sales data from the previous month, including interactive graphs and trend summaries. These insights will enable better performance monitoring and strategic decision-making. Over time, additional filtering and comparative visualization features may also be integrated to allow detailed exploration by date range, product category, or employee activity.
-
-### **Automated Stock Management**
-The system will include automated low-stock alerts to notify administrators when product quantities drop below a defined threshold. This feature will support proactive restocking and prevent stockouts that may affect sales continuity. Alerts may later be extended to include supplier integration for faster replenishment.
-
-### **Customer Management Integration**
-Currently, the system does not maintain customer information. A dedicated customer module will be introduced to store and manage customer details. This addition will enable the system to generate customer-specific sales reports, track purchase histories, and support loyalty or promotional initiatives in the future. Maintaining customer data will also improve overall business intelligence by providing deeper insights into customer behavior and sales trends.
-
-### **Cost Price and Profit Analysis**
-At present, the system focuses on tracking only the selling price of products. Future versions will include cost price management to facilitate accurate profit margin analysis. This enhancement will enable the calculation of profit and loss reports, helping administrators understand product-level profitability and make informed pricing decisions. Because both cost and selling prices may change over time, the system will maintain historical pricing records to ensure the accuracy of financial analyses.
-
----
 

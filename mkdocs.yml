@@ -5,6 +5,7 @@ nav:
   - Use Case: use_case.md
   - Functional Documentation: fucntional_doc.md
   - Technical Documentation: technical_doc.md
+  - Future Scope : future_scope.md
 theme:
   name: material
 markdown_extensions:
