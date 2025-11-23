@@ -67,7 +67,7 @@ It serves as the authentication backbone of the system and enforces role-based a
 
 | Field | Type | Description |
 |:------|:------|:------------|
-| `id` | int (PK) | Unique identifier for each user. |
+| `id` | uuid (PK) | Unique identifier for each user. |
 | `username` | varchar | Login name used for authentication. |
 | `role` | enum | Specifies user type — *Admin*, *Manager*, or *Salesperson*. |
 | `password` | varchar | Encrypted password for secure authentication. |
@@ -87,7 +87,7 @@ This table is primarily updated by Admins and Managers, ensuring inventory accur
 
 | Field | Type | Description |
 |:------|:------|:------------|
-| `id` | int (PK) | Unique product identifier. |
+| `id` | uuid (PK) | Unique product identifier. |
 | `product_name` | varchar | Name of the product. |
 | `category` | enum | Classification of the product (e.g., Electronics, Apparel, etc.). |
 | `quantity` | int | Current stock count for the product. |
@@ -106,9 +106,9 @@ Each transaction is linked to the user who initiated it and may contain multiple
 
 | Field | Type | Description |
 |:------|:------|:------------|
-| `id` | int (PK) | Unique identifier for the transaction. |
+| `id` | uuid (PK) | Unique identifier for the transaction. |
 | `transaction_type` | enum | Indicates whether the transaction is a *Sale* or *Purchase*. |
-| `user_id` | int (FK) | References the user who performed the transaction. |
+| `user_id` | uuid (FK) | References the user who performed the transaction. |
 | `grand_total` | numeric | Total monetary value of the transaction. |
 | `created_at`, `updated_at`, `deleted_at` | datetime | Lifecycle tracking of transaction records. |
 
@@ -124,9 +124,9 @@ It maintains a record of all individual product entries associated with a specif
 
 | Field | Type | Description |
 |:------|:------|:------------|
-| `id` | int (PK) | Unique identifier for the record. |
-| `transaction_id` | int (FK) | References the transaction to which the product belongs. |
-| `product_id` | int (FK) | References the product involved in the transaction. |
+| `id` | uuid (PK) | Unique identifier for the record. |
+| `transaction_id` | uuid (FK) | References the transaction to which the product belongs. |
+| `product_id` | uuid (FK) | References the product involved in the transaction. |
 | `quantity` | int | Number of units of the product in this transaction. |
 | `subtotal` | numeric | Total cost for the given quantity of that product. |
 | `created_at`, `updated_at`, `deleted_at` | datetime | Record management and auditing fields. |
@@ -180,10 +180,7 @@ This mechanism ensures that every API request is validated against both the user
 
 #### **1. Admin**
 - **Can:**  
-  - Add, edit, or delete products.  
-  - Update inventory levels.  
-  - Record purchase or sale transactions.  
-  - View all transactions in the system.  
+  - Add users.
   - Manage user accounts.  
 - **Cannot:**  
   - Perform any action without valid authentication.
