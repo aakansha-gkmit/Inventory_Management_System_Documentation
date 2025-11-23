@@ -6,6 +6,7 @@ nav:
   - Functional Documentation: fucntional_doc.md
   - Technical Documentation: technical_doc.md
   #- Future Scope : future_scope.md
+  - Testing Plan: testing_plan.md
 theme:
   name: material
 markdown_extensions:

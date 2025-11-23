@@ -4,7 +4,7 @@
 
 | **Actor** | **Role Description** |
 |:-----------|:---------------------|
-| **Admin** | Has full control over the system, including managing user accounts (creating or removing managers and salespersons), overseeing inventory, updating stock quantities, recording purchase transactions, and viewing all sales and purchase activities. |
+| **Admin** | Admin can manage user accounts and add users and roles. |
 | **Manager** | Oversees inventory control, manages product data, monitors stock levels, and ensures availability for sales. |
 | **Salesperson** | Interacts with customers, records sales, and provides product information based on available stock. |
 

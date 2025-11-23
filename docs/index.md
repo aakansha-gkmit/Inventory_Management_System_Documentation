@@ -69,7 +69,7 @@ The Inventory Management System (IMS) defines three primary user roles — **Adm
 
 | **Role**       | **Permissions / Capabilities** |
 |----------------|--------------------------------|
-| **Admin**      | - Has complete system control.<br>- Add, edit, or delete products.<br>- Manage user accounts (create or remove managers and salespersons).<br>- Update stock quantities and manage inventory.<br>- Record purchase transactions.<br>- View all transactions.<br>
+| **Admin**      | - Can add users.<br>- Can add roles.<br>|
 | **Manager**    | - Oversees inventory.<br>- Add, update, or delete products as required.<br>- Update inventory quantities.<br>- View sales transactions made by all salespersons.<br> |
 | **Salesperson** | - View available products and their current quantities.<br>- Record sales transactions.<br>- View and track their own transaction history.<br>- Maintain accurate sales entries. |
 
